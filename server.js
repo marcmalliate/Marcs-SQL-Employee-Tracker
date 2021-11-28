@@ -11,7 +11,7 @@ require('dotenv').config();
 var figlet = require('figlet');
 console.log("")
 console.log("")
-figlet('\nEmployee Tracker\n', function(err, data) {
+figlet('\nMarcs Employee Tracker\n', function(err, data) {
     if (err) {
         console.log('Oh no, Something went wrong...');
         console.dir(err);
