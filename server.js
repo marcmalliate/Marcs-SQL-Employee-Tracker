@@ -26,7 +26,8 @@ figlet('\nEmployee Tracker\n', function(err, data) {
 
 
 // SQL database connection and Env.
-const db = mysql.createConnection({
+const db = mysql.createConnection(
+    {
         host: 'localhost',
         port: 3306,
         user: process.env.DB_USER,
@@ -73,7 +74,7 @@ function menu() {
 
 // Query the database and get function to view all departments. 
 async function viewAllDepartments() {
-    db.query('SELECT department.name AS "Department Name", department.id AS "Deperatment ID" FROM department', function(err, results) {
+    db.query('SELECT department.name AS "Department Name", department.id AS "Department ID" FROM department', function(err, results) {
         if (err) throw err;
         console.log("Viewing All Department Information")
         console.log("\n")
