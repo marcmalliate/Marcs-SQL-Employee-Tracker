@@ -1,7 +1,7 @@
--- use the employees_db 
+
 USE employees_db; 
 
--- insert into deparment table>> ID and name values. 
+
 INSERT INTO department (id, name)
 VALUES 
 (1, "Web Development"), 
